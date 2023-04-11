@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Change Background Color</title>
+    <style>
+      #my-element {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="my-element"></div>
+    <button onclick="changeBackgroundColor()">Change Color</button>
+    <script>
+      function changeBackgroundColor() {
+        const myElement = document.querySelector('#my-element');
+        myElement.style.backgroundColor = 'blue';
+      }
+    </script>
+  </body>
+</html>
