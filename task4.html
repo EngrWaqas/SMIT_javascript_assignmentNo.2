@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 4 - Add new list item to unordered list</title>
+</head>
+<body>
+  <h1>Task 4 - Add new list item to unordered list</h1>
+  
+  <form>
+    <label for="new-item">New List Item:</label>
+    <input type="text" id="new-item" name="new-item">
+    <button type="button" onclick="addNewListItem()">Add Item</button>
+  </form>
+  
+  <ul id="my-list">
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+  </ul>
+  
+  <script>
+    function addNewListItem() {
+      const newItemText = document.getElementById('new-item').value;
+      const newListItem = document.createElement('li');
+      newListItem.textContent = newItemText;
+      const myList = document.getElementById('my-list');
+      myList.appendChild(newListItem);
+    }
+  </script>
+</body>
+</html>
